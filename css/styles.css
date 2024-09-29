@@ -12,6 +12,26 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ============== HEDER ============ */
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -22,7 +42,7 @@ a {
   color: #4d5ae5;
 }
 
-.header-logo-sudio {
+header .logo span {
   color: #2e2f42;
 }
 
@@ -34,6 +54,16 @@ a {
   color: #2e2f42;
 }
 
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: #404bbf;
+}
+
+.header-menu-link:active {
+  color: #404bbf;
+  text-decoration: underline;
+}
+
 .address-link {
   font-size: 16px;
   line-height: 1.5;
@@ -42,14 +72,23 @@ a {
   font-style: normal;
 }
 
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+
+/* ======= HERO ======== */
+
+.hero {
+  background-color: #2e2f42;
+}
+
 .hero-title {
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  background-color: #2e2f42;
 }
 
 .hero-btn {
@@ -59,4 +98,108 @@ a {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+
+/* ========== BENEFITS ============= */
+
+.benefits {
+}
+
+.benefits-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.benefits-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ========== TEAM ============= */
+
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.team-image {
+}
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* ========== PORTFOLIO ============= */
+
+.portfolio {
+}
+
+.portfolio-title {
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.portfolio-image {
+}
+
+.portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ========== FOOTER ============= */
+
+.foot {
+  background: #2e2f42;
+}
+
+footer .logo span {
+  color: #f4f4fd;
+}
+
+.foot-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
